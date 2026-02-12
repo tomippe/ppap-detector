@@ -1,0 +1,204 @@
+/* PPAP Detector - Styles v1.14.4 */
+
+#ppap-detector-popup {
+  position: fixed;
+  top: 170px;
+  right: 40px;
+  width: 320px;
+  background: #202124;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  z-index: 9999999;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  color: #e8eaed;
+  overflow: hidden;
+  
+  /* Appear animation */
+  animation: ppap-appear 0.2s ease-out forwards;
+}
+
+@keyframes ppap-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ppap-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.ppap-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.ppap-close {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #9aa0a6;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.ppap-close:hover {
+  color: #fff;
+}
+
+.ppap-content {
+  padding: 10px 14px 14px;
+}
+
+/* Loading */
+.ppap-loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9aa0a6;
+  font-size: 12px;
+}
+
+.ppap-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #5f6368;
+  border-top-color: #8ab4f8;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Item (file + password pair) */
+.ppap-item {
+  padding: 0;
+}
+
+.ppap-item-border {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #3c4043;
+}
+
+/* File name */
+.ppap-file {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.ppap-file svg {
+  flex-shrink: 0;
+  color: #9aa0a6;
+}
+
+.ppap-file span {
+  word-break: break-all;
+}
+
+/* Password row */
+.ppap-pw-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ppap-pw {
+  flex: 1;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  color: #81c995;
+  background: #303134;
+  padding: 6px 8px;
+  border-radius: 4px;
+  word-break: break-all;
+  user-select: all;
+}
+
+.ppap-copy {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #9aa0a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ppap-copy:hover {
+  color: #fff;
+}
+
+/* Fallback */
+.ppap-search-btn {
+  display: block;
+  background: #303134;
+  color: #8ab4f8;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.ppap-search-btn:hover {
+  background: #3c4043;
+}
+
+.ppap-manual {
+  display: flex;
+  gap: 6px;
+}
+
+.ppap-input {
+  flex: 1;
+  background: #303134;
+  border: 1px solid #5f6368;
+  border-radius: 4px;
+  padding: 6px 8px;
+  color: #e8eaed;
+  font-size: 12px;
+}
+
+.ppap-input:focus {
+  outline: none;
+  border-color: #8ab4f8;
+}
+
+.ppap-save {
+  background: #81c995;
+  color: #202124;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ppap-save:hover {
+  background: #a8dab5;
+}

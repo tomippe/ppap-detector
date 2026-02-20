@@ -1,0 +1,24 @@
+---
+description: PPAP Detector のビルド仕様
+globs: build.sh
+alwaysApply: false
+---
+
+# PPAP Detector ビルド仕様
+
+共通のビルドシステムは `../build-common/` を参照。
+
+## 概要
+
+- **種別**: Chrome拡張機能
+- **ビルド**: manifest.json + content.js + content.css + popup.html にバージョン埋め込み → ZIP 作成
+- **配布**: Chrome Web Store に手動アップロード
+
+## 固有設定
+
+- ZIP: `ppap-detector.zip`
+- バージョン埋め込み先: `manifest.json`, `content.js`, `content.css`, `popup/popup.html`
+- 除外: `.git*`, `.DS_Store`, `*.zip`, `*.sh`, `version.txt`, `icons/*.svg`, `icons/original.*`, `README.md`, `.gitignore`
+- FTPアップロード: なし
+- WPページ: あり（https://apps.tomippe.jp/ppap-detector/）
+- 紹介ページ設定: `docs/app-page.md` 参照

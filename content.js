@@ -1,4 +1,4 @@
-// PPAP Detector - Content Script v1.14.4
+// PPAP Detector - Content Script v1.14.5
 
 (function() {
   'use strict';

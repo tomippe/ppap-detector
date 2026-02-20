@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PPAP Detector",
-  "version": "1.14.5",
+  "version": "1.14.6",
   "description": "PPAPメール（暗号化ZIP添付）を開いた時に、対応するパスワードメールからパスワードを自動表示するChrome拡張",
   "permissions": [],
   "host_permissions": [

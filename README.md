@@ -67,4 +67,4 @@ Sent time: ...
 
 ## ライセンス
 
-MIT License
+[MIT License](LICENSE) — 利用・改変・再配布を自由に行えます（著作権表示とライセンス文の保持が条件です）。
